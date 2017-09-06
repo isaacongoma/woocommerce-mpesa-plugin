@@ -1,0 +1,35 @@
+{
+    "name": "weezqyd/http-adapters",
+    "description": "Unified API for abstracting Various Http clients",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Master Weez",
+            "email": "wizqydy@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "kriswallsmith/buzz"        : "~0.10",
+        "guzzlehttp/guzzle"         : "~5.0|~6.0",
+        "phpunit/phpunit"           : "~6.1",
+        "friendsofphp/php-cs-fixer" : "~1.11",
+        "mockery/mockery": "^0.9.9",
+        "codacy/coverage": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Http\\": "src/"
+        }
+    },
+    "scripts":{
+        "phpunit":"vendor/bin/phpunit"
+    },
+     "autoload-dev": {
+        "psr-4": {
+            "Http\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
